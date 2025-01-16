@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- This tells the browser how to read the document. -->
+    <meta charset="utf-8">
+
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Resume</title>
+
+    <!-- Load the page styles. -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:200|Anton|IM+Fell+English:400i|Marcellus+SC" rel="stylesheet">
+    <script src="js/jQuery.js"></script>
+
+    <!-- More on helper.js in the class -->
+    <script src="js/helper.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+        #header {
+            background-color: transparent;
+            background-image: url('images/5f442031.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body unresolved>
+<div id="main">
+    <!-- Кнопка -->
+    <button id="showTextBtn">Показать текст</button>
+
+    <!-- Блок с текстом -->
+    <div id="textBlock" class="hidden">
+        I am all-round multimedia strategist with a broad skill set in web development, graphic design and digital marketing. I have four years of experience designing and improving user experiences for a diverse group of people. I have worked on multiple projects that have gave me the opportunity to learn new skills such as web analytics and graphic design. I am always looking for improvement and thirsty for knowledge. Currently, I am doing online Front-end dev program called Udacity that is giving me the skills to get better at coding. I like to get involve in projects that make a difference and be surrounded by intelligent and open-minded people.
+    </div>
+
+    <div id="header" class="center-content clearfix">
+        <ul id="topContacts" class='flex-box'></ul>
+    </div>
+    <div style='clear: both;'></div>
+    <div id="workExperience" class='gray'>
+        <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+        <h2>Projects</h2>
+    </div>
+    <div id="education" class='gray'>
+        <h2>Education</h2>
+    </div>
+    <div id="mapDiv">
+        <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="letsConnect" class='dark-gray'>
+        <h2 class='darkred center-text'>Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+        </ul>
+    </div>
+</div>
+
+<!--
+The next line tells the browser where to download the JavaScript file you'll be
+writing. In resumeBuilder.js, you'll be writing code that builds the resume
+dynamically when this website, index.html, is opened.
+-->
+<script src="js/resumeBuilder.js"></script>
+<script type="text/javascript">
+    if (document.getElementsByClassName('flex-item').length === 0) {
+        document.getElementById('topContacts').style.display = 'none';
+    }
+    if (document.getElementsByTagName('h1').length === 0) {
+        document.getElementById('header').style.display = 'none';
+    }
+    if (document.getElementsByClassName('work-entry').length === 0) {
+        document.getElementById('workExperience').style.display = 'none';
+    }
+    if (document.getElementsByClassName('project-entry').length === 0) {
+        document.getElementById('projects').style.display = 'none';
+    }
+    if (document.getElementsByClassName('education-entry').length === 0) {
+        document.getElementById('education').style.background = 'black';
+    }
+    if (document.getElementsByClassName('flex-item').length === 0) {
+        document.getElementById('letsConnect').style.display = 'none';
+    }
+    if (document.getElementById('map') === null) {
+        document.getElementById('mapDiv').style.display = 'none';
+    }
+</script>
+<script>
+    document.getElementById('showTextBtn').addEventListener('click', function() {
+        const textBlock = document.getElementById('textBlock');
+        if (textBlock.classList.contains('hidden')) {
+            textBlock.classList.remove('hidden'); // Показываем блок
+        } else {
+            textBlock.classList.add('hidden'); // Скрываем блок
+        }
+    });
+</script>
+<script>
+    document.getElementById('showTextBtn').addEventListener('click', function() {
+        const textBlock = document.getElementById('textBlock');
+        if (textBlock.classList.contains('hidden')) {
+            textBlock.classList.remove('hidden'); // Показываем блок
+        } else {
+            textBlock.classList.add('hidden'); // Скрываем блок
+        }
+    });
+</script>
+<script>
+    document.getElementById('showTextBtn').addEventListener('click', function() {
+        const textBlock = document.getElementById('textBlock');
+        if (textBlock.classList.contains('hidden')) {
+            textBlock.classList.remove('hidden'); // Показываем блок
+        } else {
+            textBlock.classList.add('hidden'); // Скрываем блок
+        }
+    });
+</script>
+</body>
+
+</html>
