@@ -9,7 +9,7 @@ var bio = {
     }],
     "welcomeMessage": "",
     "skills": ["HTML5", "CSS3", "Media Query", "JavaScript", " P5", "Bootstrap", "jQuery", "CMS", "Ektron", "GitHub"],
-    "biopic": "images/profile.jpg"
+    "biopic": "profile.jpg"
 };
 
 var education = {
