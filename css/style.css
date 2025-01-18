@@ -1,0 +1,102 @@
+/* Стилизация навигационного бара */
+/* Стили для .navbar */
+.navbar {
+    position: relative;
+    z-index: 10;
+    background-color: #333;
+}
+
+/* Стили для списка ul внутри .navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+}
+
+/* Стили для пунктов li внутри .navbar ul */
+.navbar ul li {
+    float: left;
+}
+
+/* Стили для ссылок a внутри .navbar ul li */
+.navbar ul li a {
+    display: block;
+    color: #00BFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Изменение цвета ссылки при наведении курсора */
+.navbar ul li a:hover {
+    background-color: #00BFFF;
+}
+
+/* Активная ссылка */
+.navbar ul li a.active {
+    background-color: #4CAF50;
+}
+
+/* Стилизация контейнера на главной странице */
+#hero .container {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Стилизация изображений */
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Стилизация основного заголовка */
+h1 {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+/* Общий стиль для текстовых блоков */
+.content p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Стилизация секций */
+section {
+    padding: 20px 0;
+}
+
+/* Стилизация прогресс-бара */
+.progress {
+    background-color: lightgray;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.bar {
+    background-color: green;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+/* Стилизация футера */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
